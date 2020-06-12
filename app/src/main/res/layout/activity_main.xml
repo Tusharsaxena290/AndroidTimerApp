@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/timerSeekbar"
+        android:layout_width="350dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="528dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="475dp"
+        android:layout_height="515dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerSeekbar"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/timer" />
+
+    <EditText
+        android:id="@+id/timerTextView"
+        android:layout_width="75dp"
+        android:layout_height="111dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0:30"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <Button
+        android:id="@+id/controllerButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:onClick="controlTimer"
+        android:text="GO!"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="655dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
